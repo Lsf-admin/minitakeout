@@ -1,0 +1,37 @@
+<!--pages/mycenter/mycenter.wxml-->
+<view>
+	<!-- 头部 -->
+	<view class="header">
+		<image src="{{headImage}}"></image>
+		<text>name</text>
+	</view>
+	<!-- 钱包 -->
+	<view class="wallet">
+		<view class="money">
+			<text>钱包</text>
+			<text>￥</text>
+			<text>优惠券</text>
+		</view>
+		<view class="QRcade"><image src="{{qrCade}}"></image></view>
+	</view>
+	<!-- 收藏/历史记录 -->
+	<view class="history">
+		<text>收藏</text>
+		<text>历史记录</text>
+	</view>
+	<!-- 管理 -->
+	<view class="admin">
+		<text>账户管理</text>
+		<text>收获地址管理</text>
+		<text>支付设置</text>
+		<text>隐私</text>
+	</view>
+	<!-- 退出账户按钮 -->
+	<view>
+		<button type="primary" plain="true">退出账户</button>
+	</view>
+	<view>
+		<Footer show="{{show}}" bind:myevent="onMyEvent"></Footer> 
+	</view>
+	<Tcc wx:if="{{show}}" show="{{show}}" bind:hisevent="onhisEvent"></Tcc>
+</view>

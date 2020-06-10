@@ -1,0 +1,80 @@
+<!--pages/foodcategory/foodcategory.wxml-->
+<view>
+	<Head></Head>
+	<view>
+		<view class="allfilter">
+			<view class="categoryfilter">
+				<text>类别</text>
+				<text class="filter"></text>
+			</view>
+			<view class="businessfilter" bindtap="tobusiness">
+				<view class="business">
+					<text>商家</text>
+					<text>未选</text>
+					<!-- <image></image> -->
+				</view>
+				<text class="businesstit">商家</text>	
+			</view>
+		</view>		
+		<!-- <view class="rice">
+			<view class="ricenames">
+				<block wx:for="{{riceNames}}" wx:for-item="items" wx:index="{{index}}">
+					<text class=" {{swiperCurrent == index ? 'now' : ''}}">{{items}}</text>
+				</block>
+			</view>
+			<view class="rotation">
+				<swiper previous-margin="70px" next-margin="70px" bindchange="riceSwiperChange">
+					<block wx:for="{{riceimgUrls}}" wx:index="{{index}}" wx:key=''>
+						<swiper-item>
+							<image src="{{item.url}}" class="slide-image {{swiperCurrent == index ? '' : 'active'}}"></image>
+						</swiper-item>
+					</block>
+				</swiper>
+				<view class="ricename">
+					<block wx:for="{{riceimgUrls}}" wx:index="{{index}}" wx:key=''>
+						<text wx:if="{{swiperCurrent == index ? item.nam : ''}}">{{item.nam}}</text>
+					</block>
+				</view>
+			</view>
+		</view> -->
+
+		<!-- 重新写开始  -->
+		<view class="rice">
+			<!-- tabs导航条 -->
+			<view class="ricenames">
+				<block wx:for="{{foodcategory}}" wx:index="{{index}}" >
+					<text data-id="{{index}}" class="{{riceCurrent == index ? 'now' : ''}}" bindtap="changeclass">{{item.foodname}}</text>
+				</block>
+			</view>
+			<!-- 轮播图 -->
+			<view class="rotation">
+				<block wx:for="{{foodcategory}}" wx:index="{{index}}">
+					<view wx:if="{{riceCurrent == index ? item.friedrice : ''}}">
+						<swiper previous-margin="70px" next-margin="70px" bindchange="riceSwiperChange">
+							<block wx:for="{{item.friedrice}}" wx:index="{{index}}" wx:key=''>
+								<swiper-item>
+									<image src="{{item.url}}" class="slide-image {{swiperCurrent == index ? '' : 'active'}}"></image>
+								</swiper-item>
+							</block>
+						</swiper>
+						<!-- 菜名 -->
+						<view class="ricename">
+							<block wx:for="{{item.friedrice}}" wx:index="{{index}}" wx:key=''>
+								<text wx:if="{{swiperCurrent == index ? item.nam : ''}}">{{item.nam}}</text>
+							</block>
+						</view>
+					</view>
+				</block>
+			</view>
+		</view>
+		<!-- 重新写结束 -->
+
+		<view class="next">
+			<text >next</text>
+		</view>
+		<view>
+			<Footer show="{{show}}" bind:myevent="onMyEvent"></Footer>
+		</view>
+		<Tcc wx:if="{{show}}" show="{{show}}" bind:hisevent="onhisEvent"></Tcc>
+	</view> 
+</view>

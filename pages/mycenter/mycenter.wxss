@@ -1,0 +1,56 @@
+/* pages/mycenter/mycenter.wxss */
+.header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: black solid 1rpx;
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 5px;
+}
+.header image {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+.wallet {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 1rpx solid rgb(94, 70, 70);
+	border-radius: 50rpx;
+	padding: 10px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: rgb(243, 243, 243);
+}
+.wallet .money {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.wallet .QRcade image {
+	width: 120px;
+	height: 120px;
+}
+.history {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 40px;
+}
+.history text {
+	font-size: 20px;
+	font-weight: 800;
+}
+.admin {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+.admin text {
+	margin: 10px 40px;
+}

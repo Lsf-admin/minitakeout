@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Head": "../components/head/head",
+    "Footer": "../components/foot/foot",
+    "Tcc": "../components/tcc/tcc"
+  },
+  "navigationStyle": "custom"
+}

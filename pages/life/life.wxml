@@ -1,0 +1,58 @@
+<!--pages/life/life.wxml-->
+<view>
+	<!-- 头部 -->
+	<view class="toubu">
+		<image src="{{headimage}}"></image>
+		<Head></Head>
+	</view>
+	<!-- 中部 -->
+	<view class="friend">
+		<text class="pai">派</text>
+		<text>好友</text>
+	</view>
+	<!-- 头像/name -->
+	<view class="onwerinformation">
+		<view class="tp"><image src="{{headerimage}}"></image></view>
+		<view class="wz">
+			<text>{{name}}</text>
+			<text class="smallwz">反馈</text>
+		</view>
+	</view>
+	<!-- 轮播图 -->
+	<view class="lbt">
+		<swiper previous-margin="70px" next-margin="70px" bindchange="riceSwiperChange">
+			<block wx:for="{{drinkimgUrls}}" wx:index="{{index}}" wx:key=''>
+				<swiper-item >
+					<image src="{{item.url}}" class="slide-image {{swiperCurrent == index ? '' : 'active'}}"></image>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<!-- 输入框 -->
+	<view class="srk">
+		<textarea value="{{tag}}" bindinput="changetag"></textarea>
+	</view>
+	<!-- 底部 -->
+	<view class="db">
+		<view class="fzq">
+			<text>分组前\n</text>
+			<text>海源医学院</text>
+		</view>
+		<view class="fzh">
+			<view class="dzpl">
+				<text space="nbsp">点赞   </text>
+				<text>|</text>
+				<text space="nbsp">   评论</text>
+			</view>
+			<view class="ddd">
+				<text>...</text>
+			</view>	
+		</view>
+	</view>
+	<!-- 加号 -->
+	<view class="jh">+</view>
+	<view>
+		<Footer show="{{show}}" bind:myevent="onMyEvent"></Footer>
+	</view>
+	<Tcc wx:if="{{show}}" show="{{show}}" bind:hisevent="onhisEvent"></Tcc>
+</view>

@@ -1,0 +1,52 @@
+<!--pages/businesscategory/businesscategory.wxml-->
+<view>
+	<Head></Head>
+	<view>
+		<view class="allfilter">
+			<view class="categoryfilter">
+				<text>类别</text>
+				<text class="filter">筛选</text>
+			</view>
+			<view class="businessfilter">
+				<text class="businesstit" bindtap="tomap">跑腿配送</text>	
+			</view>
+		</view>	
+
+		<view class="rice">
+			<view class="ricenames" bindchange="riceSwiperChange">
+				<block wx:for="{{riceNames}}" wx:for-item="items" wx:index="{{index}}">
+					<text class=" {{swiperCurrent == index ? 'now' : ''}}">{{items}}</text>
+				</block>
+			</view>
+			<view class="rotation">
+				<swiper previous-margin="70px" next-margin="70px" bindchange="riceSwiperChange">
+					<block wx:for="{{riceimgUrls}}" wx:index="{{index}}" wx:key=''>
+						<swiper-item >
+							<view class="yes"><image src="../../images/seleted.png"></image></view>
+							<image src="{{item.url}}" class="slide-image {{swiperCurrent == index ? '' : 'active'}}"></image>
+						</swiper-item>
+					</block>
+				</swiper>
+				<view class="shop">
+					<view class="pay">￥: 13.00</view>
+					<view class="shopname"><text>可口可乐</text></view>
+				</view>
+				<view class="tag">
+					<view class="remarks">
+						<text>送至:</text>
+						<text>预计送达时间：11:30</text>
+					</view>
+					<view class="addbz"><text>添加\n备注</text></view>
+				</view>
+			</view>
+		</view>
+		<view class="finish" bindtap="tomap">
+			<text>完成</text>
+		</view>
+		<view class="db">
+			<text>1</text>
+			<Footer show="{{show}}" bind:myevent="onMyEvent"></Footer>
+		</view>
+		<Tcc wx:if="{{show}}" show="{{show}}" bind:hisevent="onhisEvent"></Tcc>
+	</view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/components/head.wxml-->
+	<view class="head">
+		<view class="dw">
+			<view class="tb"><image src="../../../images/map.png"></image></view>
+			<view class="dd"><text class="address">海源医学院</text></view>	
+		</view>
+		<view class="mainpart">
+			<view class="search">
+				<input class="srk"></input>
+				<view></view>
+			</view>
+			<view class="headportrait" bindtap="tomycenter">
+				<image src="/images/头像.png"></image>
+				<text>Name</text>
+			</view>
+		</view>
+	</view>

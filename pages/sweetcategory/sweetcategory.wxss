@@ -1,0 +1,137 @@
+/* pages/foodcategory/foodcategory.wxss */
+.allfilter .categoryfilter text,
+.allfilter .businessfilter text {
+	font-size: 25px;
+	display: inline-block;
+}
+.allfilter .categoryfilter text {
+	height: 53px;
+	line-height: 53px;
+}
+.allfilter .categoryfilter {
+	background-color: rgb(243, 243, 243);
+	text-align: center;
+	width: 110px;
+}
+.allfilter .businessfilter {
+	height: 45px;
+	width: 180px;
+	padding: 4px;
+	background-color: rgb(243, 243, 243);
+}
+.allfilter .businessfilter .business {
+	width: 45px;
+	height: 45px;
+	border: 1rpx solid black;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+}
+.allfilter .businessfilter .business text {
+	font-size: 12px;
+}
+/* .allfilter .businessfilter .business image {
+	width: 24px;
+	height: 24px;
+} */
+.allfilter .businessfilter .businesstit {
+	background-color: rgb(243, 243, 243);
+	margin-left: 50px;
+}
+.allfilter {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin-top: 15px;
+	padding: 0 10px;
+}
+.rice .rotation {
+	text-align: center;
+}
+.rice .ricenames text{
+	font-size: 25px;
+	display: inline-block;
+	padding: 0 15px;
+}
+.rice .ricenames {
+	background-color: rgb(243, 243, 243);
+	padding: 10px 0;
+	margin: 10px 0;
+}
+.rice .rotation .ricename {
+	/* background-color: hotpink; */
+	font-size: 20px;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	margin-top: 30px;
+	width: 70%;
+	border-bottom: 1rpx solid black;
+}
+.next {
+	background-color: rgb(243, 243, 243);
+	margin-top: 40px;
+	text-align: center;
+	font-size: 20px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+
+}
+.rotation swiper {
+	height: 180px;
+	/* background-color: pink; */
+}
+.rotation swiper image {
+	width: 90%;
+	height: 100%;
+}
+.rotation swiper .active {
+	width: 70%;
+	height: 80%;
+	margin-top: 18px;
+}
+.rice .ricenames .now {
+	font-weight: 700;
+font-size: 28px;
+}
+.tag .remarks text{
+	text-align: left;
+	display: block;
+}
+.tag .remarks {
+	padding: 10px;
+}
+.tag {
+	margin-top: 10px;
+	background-color: brown;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.tag .addbz {
+	background-color: chartreuse;
+	padding: 0 10px;
+	padding-top: 10px;
+}
+.rice .rotation .shop {
+	/* background-color: hotpink; */
+	font-size: 20px;
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-bottom: 1rpx solid black;
+}
+.rice .rotation .shop .pay {
+	border: 1rpx solid black;
+	width: 180px;
+	margin: 0 auto;
+}
+.rice .rotation .shop .shopname {
+	padding: 10px 0;
+}
+/* 、、、、、、、、、、、、、、、、、、、、、、、 */
+.rice .ricenames .lll {
+	overflow: block;
+}

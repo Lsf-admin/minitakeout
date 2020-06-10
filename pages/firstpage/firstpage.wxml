@@ -1,0 +1,73 @@
+<!--pages/firstpage.wxml-->
+<view >
+	<!-- 头部 -->
+	<!-- <view class="head">
+		<text class="address">海源医学院</text>
+		<view class="mainpart">
+			<view class="search">
+				<input class="srk"></input>
+				<view></view>
+			</view>
+			<view class="headportrait">
+				<image src="/images/头像.png"></image>
+				<text>Name</text>
+			</view>
+		</view>
+	</view> -->
+	<Head></Head>
+	<!-- 主体部分 -->
+	<view>
+		<!-- 美食 -->
+		<view class="food" bindtap="tofood">
+			<view class="foodtit">
+				<text>美食</text>
+				<text class="recommend">今日推荐</text>
+			</view>
+			<view class="rotation">
+				<swiper previous-margin="70px" next-margin="70px" bindchange="deliciousSwiperChange">
+					<block wx:for="{{deliciousimgUrls}}" wx:index="{{index}}" wx:key=''>
+						<swiper-item >
+							<image src="{{item.url}}" class="slide-image {{deliciousCurrent == index ? '' : 'active'}}"></image>
+						</swiper-item>
+					</block>
+				</swiper>
+			</view>
+		</view>
+		<!-- 甜品 -->
+		<view class="food" bindtap="tosweet">
+			<view class="foodtit">
+				<text>甜品</text>
+				<text class="recommend">今日推荐</text>
+			</view>
+			<view class="rotation">
+				<swiper previous-margin="70px" next-margin="70px" bindchange="dessertSwiperChange">
+					<block wx:for="{{dessertimgUrls}}" wx:index="{{index}}" wx:key=''>
+						<swiper-item >
+							<image src="{{item.url}}" class="slide-image {{dessertCurrent == index ? '' : 'ative'}}"></image>
+						</swiper-item>
+					</block>
+				</swiper>
+			</view>
+		</view>
+	</view>
+	<view class="csps" bindtap="tosupermaket">
+		<text>超市及配送服务</text>
+	</view>
+	<view>
+		<Footer show="{{show}}" bind:myevent="onMyEvent"></Footer>
+	</view>
+	<!-- <view class="tcc">
+		<view class="jz">
+			<view class="grtx" bindtap="tomycenter"><image src="../../images/头像.png"></image></view>
+			<view class="grmz"><text>name</text></view>
+			<view class="fjx"></view>
+			<view class="xx">
+				<view bindtap="tomap"><text>订单信息</text></view>
+				<view><text>aa</text></view>
+				<view><text>bb</text></view>
+				<view><text>cc</text></view>
+			</view>		
+		</view>	
+	</view> -->
+		<Tcc wx:if="{{show}}" show="{{show}}" bind:hisevent="onhisEvent"></Tcc>
+</view>

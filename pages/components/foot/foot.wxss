@@ -1,0 +1,29 @@
+/* pages/components/foot/foot.wxss */
+.foot .gwc image,
+.foot .cd image {
+	width: 32px;
+	height: 32px;
+	margin-top: 4px;
+}
+.foot {
+	display: flex;
+	justify-content: space-around;
+	height: 40px;
+	/* background-color: powderblue; */
+}
+.foot view {
+	height: 40px;
+	line-height: 40px;
+}
+.foot .smal {
+	font-size: 12px;
+}
+.foot .gwc {
+	display: flex;
+	justify-content: space-around;
+}
+.dwyd {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}

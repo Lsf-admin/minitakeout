@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Footer": "../components/foot/foot",
+    "Tcc": "../components/tcc/tcc"
+  }
+}

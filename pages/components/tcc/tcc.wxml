@@ -1,0 +1,14 @@
+<!--pages/components/tcc1/tcc.wxml-->
+<view class="tcc" bindtap="changehidden">
+		<view class="jz">
+			<view class="grtx" bindtap="tomycenter"><image src="../../../images/头像.png"></image></view>
+			<view class="grmz"><text>name</text></view>
+			<view class="fjx"></view>
+			<view class="xx">
+				<view bindtap="tomap"><text>订单信息</text></view>
+				<view><text>aa</text></view>
+				<view><text>bb</text></view>
+				<view><text>cc</text></view>
+			</view>		
+		</view>	
+	</view>

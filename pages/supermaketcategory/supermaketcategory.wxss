@@ -1,0 +1,146 @@
+/* pages/businesscategory/businesscategory.wxss */
+.allfilter .categoryfilter text,
+.allfilter .businessfilter text {
+	font-size: 25px;
+	display: inline-block;
+	margin-top: 0;
+}
+.allfilter .categoryfilter .filter {
+	font-size: 12px;
+	line-height: 33px;
+}
+.allfilter .categoryfilter {
+	background-color: rgb(243, 243, 243);
+	width: 150px;
+}
+.allfilter .businessfilter {
+	height: 45px;
+	width: 150px;
+	padding: 4px;
+	background-color: rgb(243, 243, 243);
+}
+.allfilter .businessfilter .business {
+	width: 45px;
+	height: 45px;
+	border: 1rpx solid black;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+}
+.allfilter .businessfilter .business text {
+	font-size: 12px;
+}
+.allfilter .businessfilter .business image {
+	width: 100%;
+	height: 100%;
+}
+.allfilter .businessfilter .businesstit {
+	background-color: rgb(243, 243, 243);
+	margin-left: 50px;
+}
+.allfilter {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin-top: 15px;
+	padding: 0 10px;
+}
+
+.rice .rotation {
+	text-align: center;
+}
+.rice .ricenames text{
+	font-size: 16px;
+	display: inline-block;
+	padding: 0 15px;
+}
+.rice .ricenames {
+	background-color: gainsboro;
+	padding: 5px 0;
+	margin: 10px 0;
+}
+.rice .rotation .shop {
+	/* background-color: hotpink; */
+	font-size: 20px;
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-bottom: 1rpx solid black;
+}
+.rice .rotation .shop .pay {
+	border: 1rpx solid black;
+	width: 180px;
+	margin: 0 auto;
+}
+.rice .rotation .shop .shopname {
+	padding: 10px 0;
+}
+.rotation swiper {
+	height: 157px;
+	/* background-color: pink; */
+}
+.rotation swiper image {
+	width: 90%;
+	height: 100%;
+}
+.rotation swiper .active {
+	width: 70%;
+	height: 80%;
+	margin-top: 18px;
+}
+/* 图片上的勾 */
+.rotation swiper .yes {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	z-index: 10;
+	height: 30px;
+	width: 30px;
+}
+.rotation swiper .yes image {
+	width: 30px;
+	height: 30px;
+} 
+/* 、、、、、、、、、、、、、、、 */
+.rice .ricenames .now {
+	font-weight: 700;
+	font-size: 20px;
+}
+.tag .remarks text{
+	text-align: left;
+	display: block;
+}
+.tag .remarks {
+	padding: 10px;
+}
+.tag {
+	margin-top: 10px;
+	/* background-color: brown; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.tag .addbz {
+	background-color: black;
+	color: white;
+	padding: 0 10px;
+	padding-top: 10px;
+}
+.finish {
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 20px;
+	background-color: rgb(243, 243, 243);
+}
+/* 、、、、、、、、、、、、、、、 */
+.db {
+	height: 40px;
+} 
+.db text {
+	color:red; 
+	font-size: 12px;
+	 margin-left: 230px;
+}

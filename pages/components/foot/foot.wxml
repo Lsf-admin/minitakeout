@@ -1,0 +1,14 @@
+<!--pages/components/foot/foot.wxml-->
+<view class="dwyd">
+	<view class="foot">
+		<view>外卖</view>
+		<view class="smal" bindtap="tofirstpage">点击切换本地</view>
+		<view class="gwc">
+			<view><image src="../../../images/cart-Empty.png"></image></view>
+			<view bindtap="tolife">｜ 生活</view>
+		</view>
+		<view class="cd" bindtap="showgr">
+			<image src="../../../images/category.png"></image>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,101 @@
+/* pages/firstpage.wxss */
+/* .head .address {
+	margin-left: 20px;
+	display: inline-block;
+	padding-bottom: 5px;
+}
+.head .mainpart {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.head .mainpart .search .srk {
+	border: 1px solid black;
+	height: 35px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.head .mainpart .search view {
+	border: 1rpx solid black;
+	margin-top: 18px;
+}
+.head .mainpart .search {
+	height: 70px;
+	width: 240px;
+	background-color: blanchedalmond;
+}
+.head .mainpart .headportrait image {
+	width: 45px;
+	height: 45px;
+}
+.head .mainpart .headportrait text {
+	display: block;
+} */
+/* 主体区域 */
+.food {
+	padding-top: 10px;
+}
+.food .foodtit text {
+	font-size: 25px;
+	width: 300rpx;
+	padding-left: 27rpx;
+	display: inline-block;
+}
+.food .foodtit .recommend {
+	font-size: 12px;
+	line-height: 33px;
+}
+.food .rotation {
+	text-align: center;
+}
+.rotation swiper {
+	height: 160px;
+	/* background-color: pink; */
+}
+.rotation swiper image {
+	width: 90%;
+	height: 100%;
+}
+.rotation swiper .active {
+	width: 70%;
+	height: 80%;
+	margin-top: 18px;
+}
+.rotation swiper .ative {
+	width: 70%;
+	height: 80%;
+	margin-top: 18px;
+}
+.csps {
+	background-color: rgb(218, 218, 218);
+	line-height: 35px;
+	text-align: center;
+	font-size: 20px;
+	height: 35px;
+	margin-top: 0px;
+}
+/* .tcc {
+	height: 600px;
+	width: 30%;
+	background-color: rgba(218, 218, 218, 0.7);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+}
+.tcc .jz .grtx image {
+	width: 45px;
+	height: 45px;
+}
+.tcc .jz .fjx {
+	width: 80%;
+	border: 1rpx solid black;
+	margin: 15px 0 15px 11px;
+}
+.tcc .jz {
+	text-align: center;
+	margin-top: 30px;
+}
+.tcc .jz .xx view{
+	margin: 15px 0;
+} */

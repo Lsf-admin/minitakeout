@@ -1,0 +1,41 @@
+/* pages/components/tcc1/tcc.wxss */
+/* pages/components/tcc/tcc.wxss */
+.tcc {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+	/* height: 600px;
+	width: 30%; */
+	height: 600px;
+	width: 100%;
+	background-color: rgba(218, 218, 218, 0);
+
+}
+.tcc .jz .grtx image {
+	width: 45px;
+	height: 45px;
+}
+.tcc .jz .fjx {
+	width: 80%;
+	border: 1rpx solid black;
+	margin: 15px 0 15px 11px;
+}
+.tcc .jz {
+	background-color: rgba(218, 218, 218, 0.8);
+		height: 570px;
+		padding-top: 30px;
+		width: 30%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-between; */
+
+	text-align: center;
+	/* margin-top: 30px; */
+}
+.tcc .jz .xx view{
+	margin: 15px 0;
+}

@@ -1,0 +1,95 @@
+/* pages/map/map.wxss */
+.lbps {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	justify-content: space-between;
+}
+.lbps view {
+	height: 50px;
+	line-height: 50px;
+	font-size: 25px;
+}
+.lbps .lb {
+	background-color: rgba(216, 216, 216, 0.3);
+	text-align: left;
+	padding-left: 10px;
+	width: 30%;
+}
+.lbps .ps {
+	background-color: red;
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+	width: 50%;
+}
+.express {
+	margin-top: 10px;
+	position: relative;
+	z-index: 1;
+	background-color: rgb(243, 243, 243);
+	height: 40px;
+}
+.express text {
+	height: 40px;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 80px;
+	line-height: 40px;
+	display: inline-block;
+}
+.map {
+	position: relative;
+	top: -70px;
+}
+.dhbz {
+	padding-left: 10px;
+}
+.dhbz .dh input {
+	border-bottom: 1rpx solid black;
+	width: 60%;
+	display: inline-block;
+	vertical-align:text-bottom;
+}
+.dhbz .dh {
+	/* background-color: rosybrown; */
+	height: 30px;
+	line-height: 30px;
+}
+.dhbz .bz .qs {
+	display: flex;
+	flex-direction: column;
+}
+.dhbz .bz .qs text {
+	padding: 5px 0;
+}
+.dhbz .bz {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+}
+.dhbz .bz .tjbz {
+	background-color: black;
+}
+.dhbz .bz .tjbz text {
+	display: inline-block;
+	background-color: black;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	width: 52px;
+}
+.mainnav {
+	/* background-color: violet; */
+	height: 335px;
+}
+.wc {
+	height: 35px;
+	background-color: rgb(243, 243, 243);
+	line-height: 35px;
+	font-size: 25px;
+	text-align: center;
+}

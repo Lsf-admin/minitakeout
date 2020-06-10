@@ -1,0 +1,48 @@
+/* pages/components/head.wxss */
+.head .address {
+	/* margin-left: 20px; */
+	display: inline-block;
+	padding-bottom: 5px;
+}
+.head .mainpart {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.head .mainpart .search .srk {
+	border: 1px solid black;
+	height: 35px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.head .mainpart .search view {
+	border: 1rpx solid black;
+	margin-top: 18px;
+}
+.head .mainpart .search {
+	height: 70px;
+	width: 240px;
+	/* background-color: blanchedalmond; */
+}
+.head .mainpart .headportrait image {
+	width: 45px;
+	height: 45px;
+}
+.head .mainpart .headportrait text {
+	display: block;
+}
+.head .dw {
+	/* background-color: plum; */
+	display: flex;
+	justify-content: left;
+}
+.head .dw .tb {
+	width: 26px;
+	height: 26px;
+	margin-left: 20px;
+
+} 
+.head .dw .tb image{
+	width: 100%;
+	height: 100%;	
+}
